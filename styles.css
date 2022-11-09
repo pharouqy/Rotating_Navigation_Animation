@@ -13,7 +13,7 @@ body {
 main {
   background-color: #fafafa;
   transform-origin: top left;
-  transition: transform 0.5s linear;
+  transition: transform 0.8s linear;
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
@@ -33,7 +33,6 @@ main {
   color: #fff;
   border-radius: 50%;
   position: relative;
-  transition: transform 0.5s linear;
 }
 
 button {
@@ -50,13 +49,14 @@ i.fa-solid.fa-x {
 }
 
 button#open {
-  top: 35%;
-  left: 75%;
+  top: 55%;
+  left: 65%;
 }
 
 button#close {
-  top: 65%;
-  left: 37%;
+  top: 45%;
+  left: 20%;
+  transform: rotate(120deg);
 }
 
 .content {
@@ -67,6 +67,10 @@ button#close {
 
 main.show-nav {
   transform: rotate(-40deg);
+}
+
+main.show-nav .circle-container {
+  transform: rotate(-80deg);
 }
 
 main.show-nav + nav li {
